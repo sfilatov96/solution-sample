@@ -1,0 +1,37 @@
+{
+    "kind": "Deployment",
+    "metadata": {
+        "name": "engine-ecks"
+    },
+    "spec": {
+        "replicas": 8,
+        "template": {
+            "metadata": {
+                "name": "engine-ecks-rs",
+                "labels": {
+                    "app": "nginx"
+                }
+            },
+            "spec": {
+                "containers": [
+                    {
+                        "name": "engine-ecks-cont",
+                        "image": "nginx",
+                        "env": [
+                            {
+                                "name": "USER",
+                                "value": "urmom"
+                            }
+                        ],
+                        "resources": {
+                            "requests": {
+                                "cpu": "100m",
+                                "memory": "44Mi"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
