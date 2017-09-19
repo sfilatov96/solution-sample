@@ -1,0 +1,11 @@
+[
+  {
+    "type": "deployment",
+    "file": "deploy.json"
+  },
+  {
+    "type": "service",
+    "file": "service.json",
+    "deployment": "engine-ecks"
+  }
+]
