@@ -7,6 +7,9 @@
         "name": "git-gud"
     },
     "spec": {
+        "selector": {
+            "app": "nginx"
+        },
         "ports": [
             {
                 "protocol": "TCP",
