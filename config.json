@@ -3,7 +3,7 @@
   "namespace": "default",
   "run":[
     {
-      "name": "redis_$RANDOM_STRING_5$",
+      "name": "engine-ecks",
       "type": "deployment",
       "config_file": "deploy.json",
       "envs":[
@@ -23,8 +23,8 @@
     {
       "type": "service",
       "config_file": "service.json",
-      "name": "engine-ecks",
-      "deployment": "deplo4"
+      "name": "engine-ecks-svc",
+      "deployment": "engine-ecks"
     }
   ]
 }
