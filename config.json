@@ -1,11 +1,30 @@
-[
-  {
-    "type": "deployment",
-    "file": "deploy.json"
-  },
-  {
-    "type": "service",
-    "file": "service.json",
-    "deployment": "engine-ecks"
-  }
-]
+{
+  "name": "redis_$RANDOM_STRING_5$",
+  "namespace": "default",
+  "run":[
+    {
+      "name": "redis_$RANDOM_STRING_5$",
+      "type": "deployment",
+      "config_file": "deploy.json",
+      "envs":[
+        {
+          "name": "LOGIN",
+          "value": "$RANDOM_STRING_5$",
+          "container": "cont_name",
+          "desc": "description 1"
+        },
+        {
+          "name": "LOGIN",
+          "value": "$RANDOM_STRING_5$",
+          "desc": "description 1"
+        }
+      ]
+    },
+    {
+      "type": "service",
+      "config_file": "service.json",
+      "name": "engine-ecks",
+      "deployments": []
+    }
+  ]
+}
