@@ -24,7 +24,7 @@
       "type": "service",
       "config_file": "service.json",
       "name": "engine-ecks",
-      "deployments": []
+      "deployment": "deplo4"
     }
   ]
 }
