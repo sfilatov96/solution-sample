@@ -12,7 +12,7 @@
             {
               "name": "LOGIN",
               "value": "$RANDOM_STRING_5$",
-              "desc": "description 1",
+              "desc": "description 1"
             },
             {
               "name": "PASSWORD",
