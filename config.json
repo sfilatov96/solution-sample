@@ -15,9 +15,9 @@
               "desc": "description 1"
             },
             {
-              "name": "LOGIN",
+              "name": "PASSWORD",
               "value": "$RANDOM_STRING_5$",
-              "desc": "description 1"
+              "desc": "description password"
             }
           ],
           "name": "engine-ecks-cont"
