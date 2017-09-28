@@ -16,7 +16,7 @@
                 "containers": [
                     {
                         "name": "engine-ecks-cont",
-                        "image": "nginx",
+                        "image": "${IMAGE}",
                         "env": [
                             {
                                 "name": "USER",

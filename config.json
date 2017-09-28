@@ -3,6 +3,9 @@
   "namespace": "default",
   "run":[
     {
+      "local_envs":{
+        "IMAGE": "redis"
+      },
       "name": "engine-ecks",
       "type": "deployment",
       "config_file": "deploy.json",
