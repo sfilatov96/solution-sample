@@ -9,7 +9,7 @@
     },
     "spec": {
         "selector": {
-            "${NS_HASH}": "${DEPLOY_HASH}-${DEPLOY_NAME}"
+            "${NS_HASH}": "${DEPLOY_NAME}-${DEPLOY_HASH}"
         },
         "ports": [
             {
