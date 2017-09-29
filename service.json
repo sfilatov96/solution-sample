@@ -14,7 +14,7 @@
         "ports": [
             {
                 "protocol": "TCP",
-                "targetPort": 9418
+                "targetPort": 80
             }
         ]
     }
