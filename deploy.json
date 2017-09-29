@@ -1,7 +1,7 @@
 {
     "kind": "Deployment",
     "metadata": {
-        "name": "engine-ecks"
+        "name": "${DEPLOY_HASH}"
     },
     "spec": {
         "replicas": 8,
@@ -19,8 +19,8 @@
                         "image": "${IMAGE}",
                         "env": [
                             {
-                                "name": "USER",
-                                "value": "urmom"
+                                "name": "${ENV_KEY}",
+                                "value": "${ENV_VALUE}"
                             }
                         ],
                         "resources": {

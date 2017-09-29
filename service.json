@@ -4,7 +4,7 @@
         "labels": {
             "external": "true"
         },
-        "name": "git-gud"
+        "name": "${SVC_NAME}"
     },
     "spec": {
         "selector": {

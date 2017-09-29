@@ -1,37 +1,20 @@
 {
-  "name": "redis-$RANDOM_STRING_5$",
-  "namespace": "default",
+  "env": {
+    "IMAGE": "python",
+    "ENV_KEY": "USER",
+    "ENV_VALUE": "helpikov"
+  },
+  "compile":{
+     "DEPLOY_HASH": "$RANDOM_5"
+  },
   "run":[
     {
-      "local_envs":{
-        "IMAGE": "redis"
-      },
-      "name": "engine-ecks",
       "type": "deployment",
-      "config_file": "deploy.json",
-      "containers": [
-        {
-          "env": [
-            {
-              "name": "LOGIN",
-              "value": "$RANDOM_STRING_5$",
-              "desc": "description 1"
-            },
-            {
-              "name": "PASSWORD",
-              "value": "$RANDOM_STRING_5$",
-              "desc": "description password"
-            }
-          ],
-          "name": "engine-ecks-cont"
-        }
-      ]
+      "config_file": "deploy.json"
     },
     {
       "type": "service",
-      "config_file": "service.json",
-      "name": "engine-ecks-svc",
-      "deployment": "engine-ecks"
+      "config_file": "service.json"
     }
   ]
 }
