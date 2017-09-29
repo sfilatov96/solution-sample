@@ -3,7 +3,7 @@
     "metadata": {
         "labels": {
             "external": "true",
-            "${NS_HASH}": "${DEPLOY_HASH}-${DEPLOY_NAME}"
+            "${NS_HASH}": "${DEPLOY_NAME}-${DEPLOY_HASH}"
         },
         "name": "${SVC_NAME}"
     },
