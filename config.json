@@ -6,7 +6,7 @@
     "DEPLOY_NAME": "helpikov-redis"
   },
   "compile":{
-     "DEPLOY_HASH": "$RANDOM_5"
+     "DEPLOY_HASH": "$RANDOM_5$"
   },
   "run":[
     {
