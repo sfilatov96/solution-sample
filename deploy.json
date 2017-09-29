@@ -26,7 +26,7 @@
                         "resources": {
                             "requests": {
                                 "cpu": "100m",
-                                "memory": "44Mi"
+                                "memory": "100Mi"
                             }
                         }
                     }
