@@ -2,12 +2,14 @@
     "kind": "Service",
     "metadata": {
         "labels": {
-            "external": "true"
+            "external": "true",
+            "${NS_HASH}": "${DEPLOY_HASH}_${DEPLOY_NAME}"
         },
         "name": "${SVC_NAME}"
     },
     "spec": {
         "selector": {
+            "${NS_HASH}": "${DEPLOY_HASH}_${DEPLOY_NAME}"
         },
         "ports": [
             {

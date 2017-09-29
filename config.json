@@ -2,7 +2,8 @@
   "env": {
     "IMAGE": "python",
     "ENV_KEY": "USER",
-    "ENV_VALUE": "helpikov"
+    "ENV_VALUE": "helpikov",
+    "DEPLOY_NAME": "helpikov-redis"
   },
   "compile":{
      "DEPLOY_HASH": "$RANDOM_5"
