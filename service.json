@@ -3,13 +3,13 @@
     "metadata": {
         "labels": {
             "external": "true",
-            "${NS_HASH}": "${DEPLOY_HASH}_${DEPLOY_NAME}"
+            "${NS_HASH}": "${DEPLOY_HASH}-${DEPLOY_NAME}"
         },
         "name": "${SVC_NAME}"
     },
     "spec": {
         "selector": {
-            "${NS_HASH}": "${DEPLOY_HASH}_${DEPLOY_NAME}"
+            "${NS_HASH}": "${DEPLOY_HASH}-${DEPLOY_NAME}"
         },
         "ports": [
             {

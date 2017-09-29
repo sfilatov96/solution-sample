@@ -1,7 +1,7 @@
 {
     "kind": "Deployment",
     "metadata": {
-        "name": "${DEPLOY_HASH}"
+        "name": "${DEPLOY_NAME}-${DEPLOY_HASH}"
     },
     "spec": {
         "replicas": 8,
