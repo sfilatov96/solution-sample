@@ -3,7 +3,8 @@
     "IMAGE": "python",
     "ENV_KEY": "USER",
     "ENV_VALUE": "helpikov",
-    "DEPLOY_NAME": "helpikov-redis"
+    "DEPLOY_NAME": "helpikov-redis",
+    "SVC_NAME": "helpikov-svc"
   },
   "compile":{
      "DEPLOY_HASH": "$RANDOM_5$"
